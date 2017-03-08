@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <title>Order some food</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style>
+      body {
+        padding: 60px 0;
+      }
+      
+      .form-group {
+        padding: 20px 0;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <div class="container">
+      
+      <div class="row">
+        <div class="col-sm-6 col-sm-offset-3">
+          
+          <form action="#">
+
+            <div class="form-group">
+              <label for="food">Choose a food</label>
+
+              <select name="food" id="food" class="form-control">
+                <option value="sushi">Sushi</option>
+                <option value="burger">Burger</option>
+              </select>
+            </div>
+
+            <div id="sushi-type" class="form-group">
+              <h4>What kind of sushi do you want?</h4>
+
+              <div class="checkbox">
+                <label for="sushi_type_salmon">
+                  <input id="sushi_type_salmon" type="radio" name="sushi_type" value="salmon">
+                  Salmon
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label for="sushi_type_tuna">
+                  <input id="sushi_type_tuna" type="radio" name="sushi_type" value="tuna">
+                  Tuna
+                </label>
+              </div>
+            
+            </div>
+
+            <div id="burger-toppings" class="form-group">
+              <h4>What toppings do you want on your burger?</h4>
+
+              <div class="checkbox">
+                <label for="lettuce">
+                  <input id="lettuce" type="checkbox" name="toppings" value="lettuce">
+                  Lettuce
+                </label>
+              </div>
+              
+              <div class="checkbox">
+                <label for="tomato">
+                  <input id="tomato" type="checkbox" name="toppings" value="tomato">
+                  Tomato
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label for="cheese">
+                  <input id="cheese" type="checkbox" name="toppings" value="cheese">
+                  Cheese
+                </label>
+              </div>
+
+              <div class="checkbox">
+                <label for="bacon">
+                  <input id="bacon" type="checkbox" name="toppings" value="bacon">
+                  Bacon
+                </label>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" value="Order Now" class="btn btn-success">
+            </div>
+
+          </form>
+
+        </div>
+      </div>
+
+    </div>
+
+
+    
+  </body>
+</html>
